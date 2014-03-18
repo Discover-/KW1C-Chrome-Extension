@@ -15,6 +15,7 @@ chrome.runtime.sendMessage({method: "getLocalStorage", key: "store.settings.pass
 	var body = document.body;
 	var textContent = body.textContent || body.innerText;
 
+	//! If the user's account information is incorrect...
 	if (-1 != textContent.indexOf("Je kunt niet worden aangemeld bij Koning Willem I College. Controleer je gebruikersnaam en wachtwoord en probeer het opnieuw."))
 	{
 		alert("U bent niet automatisch ingelogd omdat uw account info niet correct blijkt te zijn.");
