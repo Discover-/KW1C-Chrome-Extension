@@ -1,5 +1,5 @@
 {
-  "name": "KW1C Password Reminder",
+  "name": "KW1C Chrome Extension",
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "An extension to save the passwords of the N@Tschool and Portaal pages on KW1C.nl.",
@@ -10,7 +10,6 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "default_locale": "en",
   "background":
   {
     "scripts":

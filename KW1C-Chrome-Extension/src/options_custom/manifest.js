@@ -1,23 +1,23 @@
 this.manifest =
 {
-    "name": "KW1C Password Reminder",
+    "name": "KW1C Chrome Extension",
     "icon": "icon.png",
     "settings": 
 	[
         {
-            "tab": i18n.get("information"),
-            "group": i18n.get("login"),
+            "tab": "Information",
+            "group": "Login",
             "name": "username",
             "type": "text",
-            "label": i18n.get("username"),
+            "label": "Username",
             "text": "username"
         },
         {
-            "tab": i18n.get("information"),
-            "group": i18n.get("login"),
+            "tab": "Information",
+            "group": "Login",
             "name": "password",
             "type": "text",
-            "label": i18n.get("password"),
+            "label": "Password",
             "text": "password",
             "masked": true
         },
