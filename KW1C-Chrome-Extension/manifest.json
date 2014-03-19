@@ -2,7 +2,7 @@
   "name": "KW1C Chrome Extension",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "An extension to save the passwords of the N@Tschool and Portaal pages on KW1C.nl.",
+  "description": "Een simpele extensie om automatisch in te loggen in de N@Tschool and Portaal pagina's op KW1C.nl.",
   "homepage_url": "http://www.jasper-rietrae.com/",
   "icons":
   {
