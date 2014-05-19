@@ -23,6 +23,8 @@ chrome.runtime.sendMessage({method: "getLocalStorage", key: "store.settings.pass
 	}
 	
 	var password = (response.data !== undefined) ? response.data : "";
-	document.getElementById('password').value = password.substr(1, password.length - 2);
-	document.getElementById('Submit1').click();
+	document.addEventListener('DOMContentLoaded', function(){
+		document.getElementById('password').value = password.substr(1, password.length - 2);
+		document.getElementById('Submit1').click();
+	});
 });
