@@ -1,6 +1,6 @@
 {
   "name": "KW1C Chrome Extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "Een simpele extensie om automatisch in te loggen in de N@Tschool and Portaal pagina's op KW1C.nl.",
   "homepage_url": "http://www.jasper-rietrae.com/",
