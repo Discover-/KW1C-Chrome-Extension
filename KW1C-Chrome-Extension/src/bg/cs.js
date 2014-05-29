@@ -4,7 +4,10 @@ chrome.runtime.sendMessage({method: "getLocalStorage", key: "store.settings.user
 		return;
 		
 	var username = (response.data !== undefined) ? response.data : "";
-	document.getElementById('username').value = username.substr(1, username.length - 2);
+	try{
+		document.getElementById('username').value = username.substr(1, username.length - 2);
+	}
+	catch(e){}
 });
 
 chrome.runtime.sendMessage({method: "getLocalStorage", key: "store.settings.password"}, function(response)
@@ -23,6 +26,10 @@ chrome.runtime.sendMessage({method: "getLocalStorage", key: "store.settings.pass
 	}
 	
 	var password = (response.data !== undefined) ? response.data : "";
-	document.getElementById('password').value = password.substr(1, password.length - 2);
-	document.getElementById('Submit1').click();
+	try{
+		document.getElementById('password').value = password.substr(1, password.length - 2);
+		document.getElementById('Submit1').click();	
+	}
+	catch(e){}
+	
 });
