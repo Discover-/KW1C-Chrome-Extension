@@ -1,6 +1,6 @@
 {
   "name": "KW1C Chrome Extension",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "manifest_version": 2,
   "description": "Een simpele extensie om automatisch in te loggen in de N@Tschool and Portaal pagina's op KW1C.nl.",
   "homepage_url": "http://www.jasper-rietrae.com/",
@@ -21,14 +21,13 @@
   "content_scripts":
   [
    {
-     "matches": ["https://hetportaal.kw1c.nl/*", "https://natschool.kw1c.nl/*"],
-     "js": ["/src/bg/cs.js"]
+      "matches": ["*://*.kw1c.nl/*"],
+      "js": ["/src/bg/cs.js"],
+      "run_at": "document_end"
    }
   ],
   "permissions": [
-    "https://hetportaal.kw1c.nl/*",
-	"https://natschool.kw1c.nl/*"
+    "*://*.kw1c.nl/*"
   ],
   "options_page": "src/options_custom/index.html"
 }
-
